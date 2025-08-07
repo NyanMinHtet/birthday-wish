@@ -15,8 +15,8 @@
 }
 
 .photo-placeholder {
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   background-color: rgba(255, 255, 255, 0.8);
   margin: 20px;
   display: flex;
@@ -25,6 +25,20 @@
   border-radius: 50%;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   color: #282c34;
+}
+
+.wish-text {
+  font-size: 0.8em; /* Adjust this value to make the text smaller or larger */
+  margin: 10px auto;
+  text-align: justify;
+  max-width: 50%;
+}
+
+.photo-placeholder img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .cake {
@@ -53,7 +67,7 @@
   height: 60px;
   background-color: rgba(255, 255, 255, 0.7);
   border-radius: 50%;
-  animation: balloon-animation 10s linear infinite;
+  animation: balloon-animation 15s linear infinite;
 }
 
 .balloon::after {
@@ -130,7 +144,7 @@
 
 @keyframes balloon-animation {
   0% {
-    transform: translateY(100vh) rotate(0deg);
+    transform: translateY(110vh) rotate(0deg);
   }
   100% {
     transform: translateY(-10vh) rotate(720deg);
